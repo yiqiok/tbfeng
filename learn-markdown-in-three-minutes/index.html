@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="天边风,tbfeng,天边风的独立博客,天边风的个人网站,天边风的知识笔记,tbfeng blog,静态博客"><title>Markdown快速入门 | 天边风</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/rss.xml"><script src="https://www.googletagmanager.com/gtag/js?id=91618986" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '91618986');
+</script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Markdown快速入门</h1><a id="logo" href="/.">天边风</a><p class="description">young, simple, naive.</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/fweet/"><i class="fa fa-twitter"> fweet</i></a><a href="/rss.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Markdown快速入门</h1><div class="post-meta">2018-09-10</div><div class="post-content"><p>如果你追求极简，恨不得直接用记事本来写文章，那么Markdown将会是你的得力工具。因为它简单，优雅，只需几个标记，就能使你的文章排版显得自然美观。文章洋洋洒洒，一气呵成，预览所见即所得，排版简洁大方。</p>
+<p>花几分钟学会Markdown，绝对让你受益终生。<span id="more"></span></p>
+<h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p>Markdown是一种文本标记语言，它通过在文本中增加简单标记，实现文本的格式化。利用Markdown，你可以轻松的实现分段、分级标题、插入链接，插入图片、插入视频等功能。github、Stackoverflow、简书等网站均支持Markdown格式。Markdown的目标是易读易写。保存的文件名后缀为‘.md’.</p>
+<h3 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h3><p>Markdown的语法本来就非常简单，但是有些功能实现方式有多种，为了更加简洁，本文只取其中最直观，好理解，便于记忆的一种。毕竟写文章不需要知道“回”字的四种写法。</p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>标题使用<code>#</code>号来表示，请注意<code>#</code>号和标题之间有一个空格。类似的Markdown标记与文本之间一般都会有个空格。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br></pre></td></tr></table></figure>
+<p>这段语法效果如下：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>按照这个规律标题可以分为很多级，建议在文章中使用不超过三级标题。</p>
+<h4 id="段落与换行"><a href="#段落与换行" class="headerlink" title="段落与换行"></a>段落与换行</h4><p>如果你需要分段，只需要在段与段之间留有空白行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">古之学者必有师。师者，所以传道受业解惑也。人非生而知之者，孰能无惑？惑而不从师，其为惑也，终不解矣。生乎吾前，其闻道也固先乎吾，吾从而师之；生乎吾后，其闻道也亦先乎吾，吾从而师之。吾师道也，夫庸知其年之先后生于吾乎？是故无贵无贱，无长无少，道之所存，师之所存也。</span><br><span class="line"></span><br><span class="line">嗟乎！师道之不传也久矣！欲人之无惑也难矣！古之圣人，其出人也远矣，犹且从师而问焉；今之众人，其下圣人也亦远矣，而耻学于师。是故圣益圣，愚益愚。圣人之所以为圣，愚人之所以为愚，其皆出于此乎？爱其子，择师而教之；于其身也，则耻师焉，惑矣。彼童子之师，授之书而习其句读者，非吾所谓传其道解其惑者也。句读之不知，惑之不解，或师焉，或不焉，小学而大遗，吾未见其明也。巫医乐师百工之人，不耻相师。士大夫之族，曰师曰弟子云者，则群聚而笑之。问之，则曰：“彼与彼年相若也，道相似也。位卑则足羞，官盛则近谀。”呜呼！师道之不复，可知矣。巫医乐师百工之人，君子不齿，今其智乃反不能及，其可怪也欤！</span><br></pre></td></tr></table></figure>
+<p>如果是想在同一个段落里另起一行，则只需要在第二行末尾空两格：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">第一行      //此处末尾两次空格键盘后回车，即space space enter</span><br><span class="line">第二行</span><br></pre></td></tr></table></figure>
+<p>这段语法效果如下：</p>
+<p>古之学者必有师。师者，所以传道受业解惑也。人非生而知之者，孰能无惑？惑而不从师，其为惑也，终不解矣。生乎吾前，其闻道也固先乎吾，吾从而师之；生乎吾后，其闻道也亦先乎吾，吾从而师之。吾师道也，夫庸知其年之先后生于吾乎？是故无贵无贱，无长无少，道之所存，师之所存也。</p>
+<p>嗟乎！师道之不传也久矣！欲人之无惑也难矣！古之圣人，其出人也远矣，犹且从师而问焉；今之众人，其下圣人也亦远矣，而耻学于师。是故圣益圣，愚益愚。圣人之所以为圣，愚人之所以为愚，其皆出于此乎？爱其子，择师而教之；于其身也，则耻师焉，惑矣。彼童子之师，授之书而习其句读者，非吾所谓传其道解其惑者也。句读之不知，惑之不解，或师焉，或不焉，小学而大遗，吾未见其明也。巫医乐师百工之人，不耻相师。士大夫之族，曰师曰弟子云者，则群聚而笑之。问之，则曰：“彼与彼年相若也，道相似也。位卑则足羞，官盛则近谀。”呜呼！师道之不复，可知矣。巫医乐师百工之人，君子不齿，今其智乃反不能及，其可怪也欤！</p>
+<p>换行效果如下：<br>第一行<br>第二行</p>
+<h4 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h4><p>使用<code>&gt;</code>标记引用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 那一年我二十一岁，在我一生的黄金时代，我有好多奢望。</span><br><span class="line">&gt; 我想爱，想吃，还想在一瞬间变成天上半明半暗的云。</span><br></pre></td></tr></table></figure>
+<p>这段语法效果如下：</p>
+<blockquote>
+<p>那一年我二十一岁，在我一生的黄金时代，我有好多奢望。<br>我想爱，想吃，还想在一瞬间变成天上半明半暗的云。</p>
+</blockquote>
+<h4 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h4><p>列表可分为有序列表和无序列表：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">1. 有序列表</span><br><span class="line">2. 有序列表</span><br><span class="line">3. 有序列表</span><br><span class="line"></span><br><span class="line">- 无序列表</span><br><span class="line">- 无序列表</span><br><span class="line">- 无序列表</span><br></pre></td></tr></table></figure>
+<p>表格语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|  姓名     |      年龄      |  身高 |</span><br><span class="line">|----------|:-------------:|------:|</span><br><span class="line">| 司徒乔    |  33           | 177   |</span><br><span class="line">| 欧阳易    |    63         |   166 |</span><br><span class="line">| 百求具    | 55            |   188 |</span><br></pre></td></tr></table></figure>
+
+<p>上面的语法效果如下：</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<p>表格语法：</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="center">年龄</th>
+<th align="right">身高</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>司徒乔</td>
+<td align="center">33</td>
+<td align="right">177</td>
+</tr>
+<tr>
+<td>欧阳易</td>
+<td align="center">63</td>
+<td align="right">166</td>
+</tr>
+<tr>
+<td>百求具</td>
+<td align="center">55</td>
+<td align="right">188</td>
+</tr>
+</tbody></table>
+<h4 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h4><p>代码区块连续的三个英文反引号来标记：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	</span><br><span class="line">    fmt.Printf(&quot;Hello, world.\n&quot;)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<p>这段语法效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"> </span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"> </span><br><span class="line">func main() &#123;</span><br><span class="line"></span><br><span class="line">	fmt.Printf(&quot;Hello, world.\n&quot;)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h4><p>行内代码则使用一个英文反引号标记:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">求和函数`func sum（）`</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p>求和函数<code>func sum（）</code></p>
+<h4 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h4><p>有些特殊符号可以通过实体名称或实体编号来表示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">版权实体名称：&amp;copy; </span><br><span class="line">版权实体编号：&amp;#169;</span><br><span class="line">注册商标实体名称：&amp;reg;</span><br><span class="line">注册商标实体编号：&amp;#174;</span><br></pre></td></tr></table></figure>
+<p>有些字符本来就是Markdown的语法载体，可以使用反斜杠转义：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\*标记的内容\*</span><br><span class="line"></span><br><span class="line">\# 有井号，但这不是标题</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p>版权符号实体名称：&copy;<br>版权符号实体编号：&#169;<br>注册商标实体名称：&reg;<br>注册商标实体编号：&#174; </p>
+<p>*标记的内容*</p>
+<p># 有井号，这不是标题</p>
+<h4 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h4><p>分隔线语法三个连续的<code>-</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>分隔线效果：</p>
+<hr>
+<h4 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h4><p>粗体使用<code>**</code>包围，斜体使用<code>*</code>包围：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**粗体**</span><br><span class="line"></span><br><span class="line">*斜体*</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><strong>粗体</strong></p>
+<p><em>斜体</em></p>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>插入链接的语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是[6m](https://6m.cx/)的链接。</span><br></pre></td></tr></table></figure>
+<p>效果是这样的：</p>
+<p>这是<a target="_blank" rel="noopener" href="https://6m.cx/">6m</a>的链接。</p>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>想要文章图文并茂？和插入链接类似，注意前面的’!’：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![GitHub Cat](https://github.com/fluidicon.png)</span><br></pre></td></tr></table></figure>
+<p>图片效果如下：</p>
+<p><img src="https://github.com/fluidicon.png" alt="GitHub Cat"></p>
+<h3 id="Markdown-编辑器"><a href="#Markdown-编辑器" class="headerlink" title="Markdown 编辑器"></a>Markdown 编辑器</h3><p>市面上Markdown编辑器多如牛毛，这里介绍几个免费的：</p>
+<p>Windows 平台</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://markdownpad.com/">Markdownpad</a></li>
+<li><a target="_blank" rel="noopener" href="http://code52.org/DownmarkerWPF/">MarkPad</a></li>
+</ul>
+<p>Linux 平台</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://sourceforge.net/p/retext/home/ReText/">ReText</a></li>
+</ul>
+<p>Mac 平台</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://25.io/mou/">Mou</a></li>
+</ul>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>Markdown语法就是这么简单。快去使用Markdown写作练练手吧，熟练以后，你就会忘掉语法，彷佛文章本来就该这么写。</p>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a target="_blank" rel="noopener" href="http://markdown.cn/">Markdown语法说明</a></p>
+<p><a target="_blank" rel="noopener" href="https://markdown.tw/">Markdown.tw</a></p>
+</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>Title: </span>Markdown快速入门</p><p><span>Author: </span>天边风</p><p><span>Date: </span>2018-09-10</p><p><span>Last Update: </span>2024-10-16</p><p><span>Blog Link: </span><a href="/learn-markdown-in-three-minutes/">https://tbfeng.com/learn-markdown-in-three-minutes/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://tbfeng.com/learn-markdown-in-three-minutes/"></i></span></p><p><span>Copyright Declaration: </span>The author owns the copyright, please indicate the source reproduced.</p></div><br><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li></ul></div><div class="post-nav"><a class="pre" href="/how-to-choose-blog-domain-name/">独立博客如何选择域名</a><a class="next" href="/hua-fei-tai-duo-zen-me-ban/">话费余额太多怎么办</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tech/">tech</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/Chiang-Kai-shek-and-Sun-Yat-sen-University/">常凯申与双鸭山大学</a></li><li class="post-list-item"><a class="post-list-link" href="/how-to-choose-blog-domain-name/">独立博客如何选择域名</a></li><li class="post-list-item"><a class="post-list-link" href="/learn-markdown-in-three-minutes/">Markdown快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/hua-fei-tai-duo-zen-me-ban/">话费余额太多怎么办</a></li><li class="post-list-item"><a class="post-list-link" href="/casio_A158W/">这就是我要的手表——Casio A158W</a></li><li class="post-list-item"><a class="post-list-link" href="/memory-in-South-Korea/">韩国出差见闻记</a></li><li class="post-list-item"><a class="post-list-link" href="/my-site-hosted-on-coding-pages/">是的，我的网站托管在Coding Pages 上</a></li><li class="post-list-item"><a class="post-list-link" href="/install-go-tools-for-visual-studio-code/">Visual Studio Code 安装Go语言调试环境</a></li><li class="post-list-item"><a class="post-list-link" href="/NATO-phonetic-alphabet/">业余无线电标准字母解释法</a></li><li class="post-list-item"><a class="post-list-link" href="/learn-go-basic-grammer/">自学Go语言之基础语法</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="https://tbfeng.com/hao" title="导航" target="_blank">导航</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2024 <a href="/." rel="nofollow">天边风.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
